@@ -436,16 +436,16 @@ Public Class CourseInput
 
             'Getting a row from the datagrid
             Dim specificRow As DataGridViewRow
-            Dim intEditIndex = intGpaRowCounter
+            Dim intEditIndex As Integer = intGpaRowCounter
 
-            specificRow = dgvCourses.Rows(intEditIndex)
+            specificRow = dgvGPA.Rows(intEditIndex)
             specificRow.Cells("gpa").Value = dblGpa
             specificRow.Cells("totalCreditHrs").Value = intTotalCreditHrs
             specificRow.Cells("level").Value = strLevel
             specificRow.Cells("semester").Value = strSemester
 
             'Acquiring data from the grid and displaying to text boxes
-            specificRow = dgvCourses.Rows(intEditIndex)
+            specificRow = dgvGPA.Rows(intEditIndex)
             txtGPA.Text = specificRow.Cells("gpa").Value
             txtTotalCreditHrs.Text = specificRow.Cells("totalCreditHrs").Value
             cmbLevel.Text = specificRow.Cells("level").Value

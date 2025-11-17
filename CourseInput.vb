@@ -206,7 +206,7 @@ Public Class CourseInput
 
     Private Sub btnCourseReset_Click(sender As Object, e As EventArgs) Handles btnCourseReset.Click
 
-        Dim confirmReset As DialogResult = MessageBox.Show("Are you sure you want to reset", "Confirm Reset", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim confirmReset As DialogResult = MessageBox.Show("Are you sure you want to reset", "Confirm Reset", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If confirmReset = DialogResult.Yes Then
             txtCourse.Clear()
@@ -299,7 +299,7 @@ Public Class CourseInput
             Exit Sub
         End If
 
-        Dim confirmDelete As DialogResult = MessageBox.Show("Are you sure you want to delete", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim confirmDelete As DialogResult = MessageBox.Show("Are you sure you want to delete", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         Dim intDeleteIndex As Integer = intCoursesRowCounter
 
@@ -337,7 +337,7 @@ Public Class CourseInput
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click, btnExitApp.Click, btnExitApplication.Click, btnCloseApp.Click
 
-        Dim result = MessageBox.Show("Are you sure you want to exit", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim result = MessageBox.Show("Are you sure you want to exit", "Quit", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If result = DialogResult.Yes Then
             Close()
@@ -467,7 +467,7 @@ Public Class CourseInput
     Private Sub btnGPAReset_Click(sender As Object, e As EventArgs) Handles btnGPAReset.Click
         If dgvGPA.Rows.Count = 0 Then Exit Sub
 
-        Dim confirmReset As DialogResult = MessageBox.Show("Are you sure you want to reset", "Confirm Reset", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim confirmReset As DialogResult = MessageBox.Show("Are you sure you want to reset", "Confirm Reset", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         If confirmReset = DialogResult.Yes Then
             txtGPA.Clear()
@@ -628,7 +628,7 @@ Public Class CourseInput
             Exit Sub
         End If
 
-        Dim confirmDelete As DialogResult = MessageBox.Show("Are you sure you want to delete", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        Dim confirmDelete As DialogResult = MessageBox.Show("Are you sure you want to delete", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
 
         Dim intDeleteIndex As Integer = intGpaRowCounter
 
